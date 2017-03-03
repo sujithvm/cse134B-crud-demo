@@ -1,6 +1,8 @@
 # cse134B-crud-demo
 CRUD demo application using Firebase and Vue.JS 
 
+Demo : https://cse134b-demo.firebaseapp.com/
+
 ### 1. Setup firebase firebase 
 
 ```
@@ -237,9 +239,9 @@ Here we have created datamodels `name`, `theme`, `url` that we will be binding t
 
 `@submit.prevent="addPlaylist"` is used to prevent the page from refreshing when submit is hit and calls `addPlayList` method.
 
-7. Now lets deploy our application. Create request should work now.
+### 7. Now lets deploy our application. Create request should work now.
 
-8. Now we shall read data from Firebase database. On deploying you should be able to populate the grid table.
+### 8. Now we shall read data from Firebase database. On deploying you should be able to populate the grid table.
 
 ```
 <div v-for="playlist in playlists">
@@ -253,7 +255,7 @@ Here we have created datamodels `name`, `theme`, `url` that we will be binding t
 </div>
 ```
 
-9. Let us add functionality for update and delete
+### 9. Let us add functionality for update and delete
 
 ```
 methods: {
@@ -277,7 +279,7 @@ and call these methods from HTML.
       <button class="btn btn-block btn-danger" @click="removePlaylist(playlist['.key'])">
 ```
 
-10. Deploy the application
+### 10. Deploy the application
 
 ```
 $ firebase deploy
